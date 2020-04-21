@@ -1,41 +1,68 @@
-﻿// MTR TicketMachine.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/****************************************************************************
+ *
+ *   Copyright (c) BENXU TANG @TANGBEN7. All rights reserved.
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice.
+ * 2. Source code is only for academic usage
+ *
+ *
+ * MTR TicketMachine.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+ *
+ * 
+ * CONTENT BELOW IS FOR CONTRIBUTORS.
+ *
+ * In the follow source code, routes are replaced by codes. routes' codes follow the rules beolw.
+ * '港島綫(il)' is coded 1.
+ * '荃灣綫(tw)': 2.
+ * '東涌綫(tc)': 3.
+ * '西鐵綫(wrl)': 4.
+ * '南港島綫(sil)': 5
+ * '東鐵綫(erl)': 6
+ * '觀塘綫ktl)': 7
+ * '馬鞍山綫(mal)': 8
+ * '將軍澳綫(tg_O_l)': 9
+ * 
+ * In the follow source code, stations are replaced by codes. Stations codes follow the rules beolw.
+ *  1. Strating stations are coded '1'.
+ *  2. Other stations along the route are coded from '2' to ...
+ *
+ * Starting station:
+ *
+ * Island line: Kennedy Town: 1
+ * Tsuen Wan line: Tsuen Wan: 1
+ * Tung Chung line: Tung Chung: 1
+ * West Railway line: Hung Hom: 1
+ * South Island line: Admiraty: 1
+ * Tseung Kwan O line: North Point: 1
+ * East Railway line: Lok Ma Chao: 1
+ * Ma On Shan line: Tai Wai: 1 
 
-//港島綫(il)1，荃灣綫(tw)2，東涌綫(tc)3，西鐵綫(wrl)4，南港島綫(sil)5，東鐵綫(erl)6，觀塘綫ktl)7，馬鞍山綫(mal)8，將軍澳綫(tg_O_l)9
+ * Interchange stations' codes：
 
-//各线路站点命名规则:
+ * 大圍：1
+ * 九龍塘：2
+ * 紅磡：3
+ * 油塘：4
+ * 調景嶺：5
+ * Quarry Bay：6
+ * 金鐘：7
+ * 中環：8
+ * 香港：9
+ * 九龍：10
+ * Austin：11
+ * 尖東：12
+ * 尖沙咀：13
+ * 油麻地：14
+ * 旺角：15
+ * 太子：16
+ * 南昌：17
+ * 美孚：18
+ * 荔景：19
+ * 北角：20
+ *
+ ****************************************************************************/
 
-//Island line: Kennedy Town: 1
-//Tsuen Wan line: Tsuen Wan: 1
-//Tung Chung line: Tung Chung: 1
-//West Railway line: Hung Hom: 1
-//South Island line: Admiraty: 1
-//Tseung Kwan O line: North Point: 1
-//East Railway line: Lok Ma Chao: 1
-//Ma On Shan line: Tai Wai: 1 
-
-//轉乘站點命名：
-
-//大圍：1
-//九龍塘：2
-//紅磡：3
-//油塘：4
-//調景嶺：5
-//Quarry Bay：6
-//金鐘：7
-//中環：8
-//香港：9
-//九龍：10
-//Austin：11
-//尖東：12
-//尖沙咀：13
-//油麻地：14
-//旺角：15
-//太子：16
-//南昌：17
-//美孚：18
-//荔景：19
-//北角：20
 
 #include <stdio.h>
 #include <graphics.h>
